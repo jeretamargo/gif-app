@@ -1,13 +1,18 @@
 import React from "react";
-
-function PreviousSearches() {
+interface Props {
+  searches: string[];
+  onLabelClick: (search: string) => void;
+}
+function PreviousSearches({ searches, onLabelClick }: Props) {
   return (
     <div className="previous-searches">
       <h2>Búsquedas Previas</h2>
       <ul className="previous-searches-list">
-        <li>payday</li>
-        <li>gta</li>
-        <li>need for speed</li>
+        {searches.map((search) => (
+          <li key={search} onClick={() => onLabelClick(search)}>
+            {search}
+          </li>
+        ))}
       </ul>
     </div>
   );
