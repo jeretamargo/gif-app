@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# GiFinder 🃏🔍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenidos a mi Repo de GiFinder! Una app con propósitos de aprendizaje hecha para reforzar conceptos sobre desarrollo frontend con React.
 
-Currently, two official plugins are available:
+GiFinder es una aplicacion web que utiliza la api publica que provee Giphy, el repositorio de Gifs más grande de internet, el mismo servicio que utilizan otras apps como Whatsapp , Facebook o Instagram para ofrecer el uso de gifs a sus usuarios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta app realiza peticiones a la api de Giphy en base al input que se le introduzca de manera automatica y muestra las primeras coincidencias en pantalla.
 
-## React Compiler
+## 🚀 Técnologías usadas
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- 🔹 Vite
+- 🔹 Typescript
+- 🔹 React
+- 🔹 Axios
 
-## Expanding the ESLint configuration
+## 📦 Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Podes correr el proyecto en tu pc con solo 3 simples pasos!
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### PASO 1: Clona el repositorio e instala las dependencias
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/usuario/repositorio.git
+cd repositorio
+npm install i
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### PASO 2: Crea una cuenta en Giphy Developers y crea tu propia API KEY
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Tutorial para obtener una API KEY de giphy:
+https://www.youtube.com/watch?v=-PGVLMe6ZP8
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Link de Giphy Developers:
+
+https://developers.giphy.com/
+
+### PASO 3: Crea la variable de entorno de la KEY
+
+Para que la aplicacion funcione correctamente debes crear un archivo .env con una variable de entorno llamada "VITE_GIPHY_API_KEY" y asignarle la API KEY de tu cuenta de Giphy Developers.
+
+EJEMPLO:
+
+```bash
+VITE_GIPHY_API_KEY=47hd8ns572e67bs769
 ```
+
+(luego del igual (=) sigue tu clave)
+
+Dale a guardar y listo!
+
+## ❤️ Aclaraciones Finales
+
+Esta app es un proyecto que es parte del curso "React: De Cero a Experto" instruido por el profesor Fernando Herrera, curso que recomiendo mucho, les dejo el enlace de Udemy.
+
+https://www.udemy.com/course/react-cero-experto
+
+💡 Desarrollado por [Jere Tamargo](https://github.com/jeretamargo).
