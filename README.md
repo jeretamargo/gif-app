@@ -1,6 +1,6 @@
 # GiFinder 🃏🔍
 
-Bienvenidos a mi Repo de GiFinder! Una app con propósitos de aprendizaje hecha para reforzar conceptos sobre desarrollo frontend con React.
+Bienvenidos a mi Repo de **GiFinder**! Una app con propósitos de aprendizaje hecha para reforzar conceptos sobre desarrollo frontend con React.
 
 GiFinder es una aplicacion web que utiliza la api publica que provee Giphy, el repositorio de Gifs más grande de internet, el mismo servicio que utilizan otras apps como Whatsapp , Facebook o Instagram para ofrecer el uso de gifs a sus usuarios.
 
@@ -28,6 +28,7 @@ npm install i
 ### PASO 2: Crea una cuenta en Giphy Developers y crea tu propia API KEY
 
 Tutorial para obtener una API KEY de giphy:
+
 https://www.youtube.com/watch?v=-PGVLMe6ZP8
 
 Link de Giphy Developers:
@@ -36,7 +37,7 @@ https://developers.giphy.com/
 
 ### PASO 3: Crea la variable de entorno de la KEY
 
-Para que la aplicacion funcione correctamente debes crear un archivo .env con una variable de entorno llamada "VITE_GIPHY_API_KEY" y asignarle la API KEY de tu cuenta de Giphy Developers.
+Para que la aplicacion funcione correctamente debes crear un archivo .env con una variable de entorno llamada **VITE_GIPHY_API_KEY** y asignarle la API KEY de tu cuenta de Giphy Developers.
 
 EJEMPLO:
 
@@ -50,7 +51,10 @@ Dale a guardar y listo!
 
 ## ❤️ Aclaraciones Finales
 
-Esta app es un proyecto que es parte del curso "React: De Cero a Experto" instruido por el profesor Fernando Herrera, curso que recomiendo mucho, les dejo el enlace de Udemy.
+Este proyecto comenzó como parte del curso _"React: De Cero a Experto"_ del profesor **Fernando Herrera**, pero fue **ampliado y adaptado por mí** para profundizar en conceptos de React, TypeScript y consumo de APIs.
+
+Recomiendo mucho el curso para quienes deseen iniciarse en React:
+👉 https://www.udemy.com/course/react-cero-experto
 
 https://www.udemy.com/course/react-cero-experto
 
